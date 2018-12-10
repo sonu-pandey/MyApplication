@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:textColorHint="@color/colorGrey"
+        android:ems="10"
+        android:hint="Name"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/etName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_action_mobile"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="number"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/etEmail1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/etMobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/etPassword1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/etEmail1"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/etPassword2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/etPassword1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:textColorHint="@color/colorGrey"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textSize="16dp" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/etPassword2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="#ff00"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Create An Account"
+                android:textColor="#ffff"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
